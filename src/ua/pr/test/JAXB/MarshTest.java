@@ -19,13 +19,13 @@ public class MarshTest {
 	    emp1.setId(1);
 	    emp1.setFirstName("Lokesh");
 	    emp1.setLastName("Gupta");
-	    emp1.setIncome(100.0);
+	    emp1.setIncome(1000.0);
 	     
 	    Employee emp2 = new Employee();
 	    emp2.setId(2);
 	    emp2.setFirstName("John");
 	    emp2.setLastName("Mclane");
-	    emp2.setIncome(200.0);
+	    emp2.setIncome(2000.0);
 	     
 	    //Add the employees in list
 	    employees.getEmployees().add(emp1);
@@ -43,7 +43,7 @@ public class MarshTest {
 	    jaxbMarshaller.marshal(employees, System.out);
 	     
 	    //Marshal the employees list in file
-	    jaxbMarshaller.marshal(employees, new File("d:/GIT/Reports/test.xml"));
+	    jaxbMarshaller.marshal(employees, new File("test.xml"));
 	}
 	
 	public static void main(String[] args) {

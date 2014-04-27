@@ -14,7 +14,7 @@ public class UnMarsh {
 			Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
 			 
 			//We had written this file in marshalling example
-			Employees emps = (Employees) jaxbUnmarshaller.unmarshal( new File("d:/GIT/Reports/test.xml") );
+			Employees emps = (Employees) jaxbUnmarshaller.unmarshal( new File("test.xml") );
 			 
 			for(Employee emp : emps.getEmployees())
 			{
